@@ -10,8 +10,10 @@ CC			=	g++
 NAMEC		=	client
 NAMES		=	server
 
-SRCC		=	client.cpp
-SRCS		=	server.cpp
+SRCC		=	client.cpp	\
+				MessageQueue.cpp
+SRCS		=	server.cpp	\
+				MessageQueue.cpp
 
 OBJC		=	$(SRCC:.cpp=.o)
 OBJS		=	$(SRCS:.cpp=.o)
